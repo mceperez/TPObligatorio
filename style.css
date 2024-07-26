@@ -65,3 +65,42 @@ footer{
     padding: 3px;
     text-align: center;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: aqua;
+    
+}
+#contenedor {
+    margin: 20px;
+    
+    
+}
+
+li{
+    margin-bottom: 100px;
+    
+}
+
+img {
+    margin-right: 10px;
+    width: 100px;   
+    height:auto;
+}
+input{
+    margin-left: 20px;
+}
+button{
+    margin-left: 20px;
+}
+span{
+    margin-left: 20px;
+}
+.contenedorTotal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#botonTotal{
+    display:inline-block ;
+    margin-right: 30px;
+}
