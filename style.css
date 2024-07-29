@@ -2,9 +2,9 @@
     display: flex;
     height: 100px;
     width: 100%;
-    background-color: yellowgreen;
+    background-color: rgb(8, 153, 153);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(201, 15, 15);
+    color: rgb(204, 76, 76);
     font-size: 40px;
     align-items: center;
     margin: 10px;
@@ -16,7 +16,8 @@
     justify-content: space-around;
 }
 
-.menu div {
+.menu a:hover {
+    transform: scale(1.1);
     margin-bottom: 20px;
     border: 1px solid;
     padding: 1px 20px;
@@ -67,7 +68,7 @@ footer{
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: aqua;
+    background-color: rgb(167, 127, 101);
     
 }
 #contenedor {
@@ -85,11 +86,13 @@ img {
     margin-right: 10px;
     width: 100px;   
     height:auto;
+    border-radius: 50%;
 }
 input{
     margin-left: 20px;
 }
-button{
+button:hover{
+    transform: scale(1.1);
     margin-left: 20px;
 }
 span{
