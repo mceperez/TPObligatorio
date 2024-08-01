@@ -58,8 +58,12 @@ button{
     width: 600px;
     background-color: rgb(8, 153, 153);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(204, 76, 76);
-    font-size: 40px;
+    color: rgb(180, 218, 171);
+    text-shadow: 1px 1px 0 #000, 
+    -1px -1px 0 #f1ecec,  
+    1px -1px 0 #0e0101,
+    -1px 1px 0 #000000;;
+    font-size: 60px;
     align-items: center;
     margin: 10px;
     padding-left: 20px;
@@ -68,6 +72,14 @@ button{
 .menu {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    width: 600px;
+    height: 50px;
+    background-color: rgb(207, 155, 42);
+    margin-bottom: 10px;
+    margin: 10px;
+    padding-left: 20px;
+
 }
 
 .menu a:hover {
@@ -78,6 +90,7 @@ button{
     margin-bottom: 10px;
     font-style: oblique;
     font-weight: bold;
+    
 }
 footer{
     background-color: rgb(136, 146, 143);

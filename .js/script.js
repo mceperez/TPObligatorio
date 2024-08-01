@@ -1,7 +1,6 @@
 //Variables para los elementos de la lista de productos
 let contenedor = document.getElementById("contenedor");//contenedor general
 let lista = document.getElementById("lista");//lista donde se van a añadir los productos
-let btnTotal = document.getElementById("botonTotal");//botón para calcular el total
 let totalCantidad = document.getElementById("totalCantidad");// elemento donde se muestra el total calculado
 
 //Array de productos,precios, imagenes y stock
@@ -72,7 +71,7 @@ function calcularPrecioTotal(input, precioTotal) {
         return;
     }
     if (cantidad > stockDisponible) {
-        alert(`La cantidad deseada (${cantidad}) exede el stock disponible (${stockDisponible}).`);
+        alert(`La cantidad deseada (${cantidad}) excede el stock disponible (${stockDisponible}).`);
         input.value = "0"; //si excede la cantidad del stock vuelve a 0
         return;
     }
@@ -104,5 +103,3 @@ function calcularTotal() {
     //muestra el total general
     totalCantidad.textContent = `Total a pagar: $${total}`;
 }
-//agrega un evento al boton para calcular el total de la compra cuando hace click
-btnTotal.addEventListener("click", calcularTotal);
