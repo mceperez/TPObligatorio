@@ -63,7 +63,15 @@ function calcularPrecioTotal(input, precioTotal) {
     let cantidad = parseInt(input.value) || 0;
     let precioUnitario = parseInt(input.dataset.precio) || 0;
     let stockDisponible = parseInt(input.dataset.stock) || 0;
+    let valorIngresado = input.value;
     
+    //verifica si el valor contiene  comas o puntos
+    if (/[,.]/.test(valorIngresado)) {
+        alert("La cantidad no puede contener comas o puntos.");
+        input.value = "0";
+        calcularTotal(); // Actualiza el total general después de restablecer el valor
+        return;
+    }
     //verifica si la cantidad ingresada es válida
     if (cantidad < 0) {
         alert("la cantidad no puede ser negativa.");

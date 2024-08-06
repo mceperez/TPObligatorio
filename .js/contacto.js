@@ -20,6 +20,13 @@ function validarEmail(valor) {
     // Verifica que el email contenga '@'
     return valor.includes('@');
 }
+
+// Función para validar el mensaje
+function validarMensaje(valor) {
+    // Verifica que el mensaje no esté vacío
+    return valor.trim() !== '';
+}
+
 // agrega un evento al botón de enviar para procesar la información del formulario
 botonenviar.addEventListener("click", (e) => {
     e.preventDefault();//no permite que el formulario se envíe
@@ -42,6 +49,11 @@ botonenviar.addEventListener("click", (e) => {
         return; // Detiene la ejecución del código
     }
 
+    // Comprobar mensaje
+    if (!validarMensaje(mensaje.value)) {
+        alert("El mensaje no puede estar vacío.");
+        return; // Detiene la ejecución del código
+    }
 
 
     //guarda los datos del formulario ingresados por el usuario en el array "información" 
